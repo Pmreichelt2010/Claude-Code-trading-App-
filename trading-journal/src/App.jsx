@@ -10,7 +10,7 @@ import Einstellungen from './pages/Einstellungen'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ThemeProvider>
         <TradesProvider>
           <Routes>
